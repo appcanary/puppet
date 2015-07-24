@@ -1,5 +1,8 @@
 class appcanary (
+
   $api_key = $appcanary::params::api_key,
+  $paths   = $appcanary::params::paths,
+
 ) inherits appcanary::params {
 
   validate_string($api_key)
