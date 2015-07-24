@@ -1,7 +1,7 @@
 #
 class appcanary::service inherits appcanary {
 
-  if ! ($service_ensure in [ 'running', 'stopped' }) {
+  if ! ($service_ensure in [ 'running', 'stopped' ]) {
     fail('service_ensure parameter must be running or stopped')
   }
 
