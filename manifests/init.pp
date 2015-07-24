@@ -1,5 +1,4 @@
 class appcanary (
-  include 'computology/packagecloud'
   $appcanary::params::api_key
 ) inherits appcanary::params {
 
