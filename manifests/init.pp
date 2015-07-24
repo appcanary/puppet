@@ -5,7 +5,7 @@ class appcanary (
   anchor { 'appcanary::begin': } ->
   class { '::appcanary::install': } ->
   class { '::appcanary::config': } ~>
-  class { ':appcanary::service': } ->
+  class { '::appcanary::service': } ->
   anchor { 'appcanary::end': }
 
 }
