@@ -1,0 +1,22 @@
+{
+  "name": "macleodmike-appcanary",
+  "version": "0.0.1",
+  "author": "Michael MacLeod"",
+  "license": "GPLv3",
+  "summary": "A module for appcanary",
+  "source": "https://github.com/MacLeodMike/puppet-appcanary",
+  "project_page": "https://github.com/MacLeodMike/puppet-appcanary",
+  "issues_url": "https://github.com/MacLeodMike/puppet-appcanary/issues",
+  "tags": ["security"],
+  "operationsystem_support": [
+    {
+      "operationsystem": "Ubunut",
+      "operatingsystemrelease": [
+        "14.04"
+      ]
+    }
+  ],
+  "dependencies": [
+    { "name": "computology/packagecloud" }
+  ]
+}
