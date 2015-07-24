@@ -1,5 +1,5 @@
 class appcanary (
-  $appcanary::params::api_key
+  $appcanary::params::api_key,
 ) inherits appcanary::params {
 
   anchor { 'appcanary::begin': } ->
