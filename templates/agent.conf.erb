@@ -1,7 +1,11 @@
-#Get your api key at https://www.appcanary.com/settings
-api_key = "<%= scope.lookupvar('appcanary::params::api_key') %>"
+# /etc/appcanary/agent.conf: Managed by puppet
+#
+# Get your API key at https://www.appcanary.com/settings
+api_key = "<%= api_key %>"
 
 [[files]]
-<% [@paths].flatten.each do |path| -%>
+<% if @paths != [] -%>
+<% @paths.flatten.each do |path| -%>
 path = "<%= path %>"
+<% end -%>
 <% end -%>
