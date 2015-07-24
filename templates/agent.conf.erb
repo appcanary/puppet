@@ -2,5 +2,6 @@
 api_key = "<%= scope.lookupvar('appcanary::params::api_key') %>"
 
 [[files]]
-# Add files to monitor here
-# path = "/var/www/someapp/current/Gemfile.lock"
+<% [@paths].flatten.each do |path| -%>
+path = "<%= path %>"
+<% end -%>

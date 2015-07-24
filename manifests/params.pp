@@ -2,6 +2,7 @@
 class appcanary::params {
 
   $api_key         = ''
+  $path            = []
   $config          = '/etc/appcanary/agent.conf'
   $config_template = 'appcanary/agent.conf.erb'
   $package_name    = [ 'appcanary' ]
