@@ -6,7 +6,7 @@ class appcanary::service inherits appcanary {
   }
 
   if $service_manage == true {
-    service ( 'appcanary':
+    service { 'appcanary':
       ensure     => $service_ensure,
       enable     => $service_enable,
       name       => $service_name,
