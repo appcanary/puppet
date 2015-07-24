@@ -1,5 +1,5 @@
 #
-class ntp::params {
+class appcanary::params {
 
   $api_key         = ''
   $config          = '/etc/appcanary/agent.conf'
