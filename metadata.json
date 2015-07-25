@@ -1,5 +1,5 @@
 {
-  "name": "macleodmike-appcanary",
+  "name": "puppet-appcanary",
   "version": "0.0.1",
   "author": "Michael MacLeod"",
   "license": "GPLv3",
@@ -8,14 +8,6 @@
   "project_page": "https://github.com/MacLeodMike/puppet-appcanary",
   "issues_url": "https://github.com/MacLeodMike/puppet-appcanary/issues",
   "tags": ["security"],
-  "operationsystem_support": [
-    {
-      "operationsystem": "Ubuntu",
-      "operatingsystemrelease": [
-        "14.04"
-      ]
-    }
-  ],
   "dependencies": [
     { "name": "puppetlabs-stdlib", "version_range": ">= 1.0.0" }
     { "name": "computology/packagecloud", "version_range": ">= 0.2.10" }
