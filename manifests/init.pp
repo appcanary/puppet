@@ -5,18 +5,6 @@ class appcanary (
 
 ) inherits appcanary::params {
 
-  include packagecloud
-  packagecloud::repo { "appcanary/agent":
-    case $::operatingsystem {
-      'debian', 'ubuntu': {
-        type => 'deb',
-      }
-      'RedHat', 'redhat', 'CentOS', 'centos', 'Amazon', 'Fedora', 'Scientific', 'OracleLinux', 'OEL': {
-        type => 'rpm',
-      }
-    }
-  }
-
   validate_string($api_key)
   validate_array($paths)
   validate_absolute_path($config)
