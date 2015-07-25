@@ -10,13 +10,14 @@
   "tags": ["security"],
   "operationsystem_support": [
     {
-      "operationsystem": "Ubunut",
+      "operationsystem": "Ubuntu",
       "operatingsystemrelease": [
         "14.04"
       ]
     }
   ],
   "dependencies": [
-    { "name": "computology/packagecloud" }
+    { "name": "puppetlabs-stdlib", "version_range": ">= 1.0.0" }
+    { "name": "computology/packagecloud", "version_range": ">= 0.2.10" }
   ]
 }
