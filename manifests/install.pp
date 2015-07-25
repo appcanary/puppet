@@ -3,10 +3,10 @@ class appcanary::install inherits appcanary {
 
   case $::operatingsystem {
     'debian', 'ubuntu': {
-      $type = 'deb',
+      $type = 'deb'
     }
     'RedHat', 'redhat', 'CentOS', 'centos', 'Amazon', 'Fedora', 'Scientific', 'OracleLinux', 'OEL': {
-      $type = 'rpm',
+      $type = 'rpm'
     }
   }
 
