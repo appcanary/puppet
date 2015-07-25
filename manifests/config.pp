@@ -9,10 +9,4 @@ class appcanary::config inherits appcanary {
     content => template($config_template),
   }
 
-  case $::operatingsystem {
-    'ubuntu': {
-      $paths += [ '/var/lib/dpkg/status' ]
-    }
-  }
-
 }
