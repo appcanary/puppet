@@ -4,9 +4,9 @@
 api_key = "<%= api_key %>"
 
 [[files]]
-<% if operatingsystem == "Ubuntu" %>
+<% if operatingsystem == "Ubuntu" -%>
 path = "/var/lib/dpkg/status"
-<% end %>
+<% end -%>
 <% [@paths].flatten.each do |path| -%>
 path = "<%= path %>"
 <% end -%>
