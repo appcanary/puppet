@@ -3,6 +3,8 @@ class appcanary (
   $api_key = $appcanary::params::api_key,
   $paths   = $appcanary::params::paths,
 
+) inherits appcanary::params {
+
   include packagecloud
   packagecloud::repo { "appcanary/agent":
     case $::operatingsystem {
@@ -14,8 +16,6 @@ class appcanary (
       }
     }
   }
-
-) inherits appcanary::params {
 
   validate_string($api_key)
   validate_array($paths)
