@@ -17,6 +17,7 @@ class appcanary (
   validate_bool($service_manage)
 
   anchor { 'appcanary::begin': } ->
+  class { '::appcanary::prereq': } ->
   class { '::appcanary::install': } ->
   class { '::appcanary::config': } ~>
   class { '::appcanary::service': } ->
