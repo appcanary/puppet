@@ -55,9 +55,10 @@ class { '::appcanary':
 * appcanary: Main class, includes all other classes.
 
 ####Private Classes
-* appcanary::install: Handles the package, including dependency on packagecloud.io
-* appcanary::config: Handles the configuration file
-* appcanary::service: Handles the service.
+* appcanary::prereq: Installs the packagecloud.io repository where appCanary resides
+* appcanary::install: Installs appCanary
+* appcanary::config: Configures appCanary
+* appcanary::service: Ensures appCanary runs
 
 ###Parameters
 The following parameters are available in the ::appcanary class:
