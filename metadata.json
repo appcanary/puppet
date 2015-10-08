@@ -1,15 +1,15 @@
 {
-  "name": "puppet-appcanary",
-  "version": "0.0.1",
-  "author": "Michael MacLeod"",
+  "name": "appcanary-puppet",
+  "version": "0.1.0",
+  "author": "Michael MacLeod",
   "license": "GPLv3",
   "summary": "A module for appcanary",
-  "source": "https://github.com/MacLeodMike/puppet-appcanary",
-  "project_page": "https://github.com/MacLeodMike/puppet-appcanary",
-  "issues_url": "https://github.com/MacLeodMike/puppet-appcanary/issues",
+  "source": "https://github.com/appcanary/puppet-appcanary",
+  "project_page": "https://github.com/appcanary/puppet-appcanary",
+  "issues_url": "https://github.com/appcanary/puppet-appcanary/issues",
   "tags": ["security"],
   "dependencies": [
-    { "name": "puppetlabs-stdlib", "version_range": ">= 1.0.0" }
+    { "name": "puppetlabs-stdlib", "version_range": ">= 1.0.0" },
     { "name": "computology/packagecloud", "version_range": ">= 0.2.10" }
   ]
 }
