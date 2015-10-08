@@ -37,13 +37,14 @@ class { '::appcanary':
 
 ##Usage
 
-To have appCanary monitor the gems in your Ruby application for vulnerabilities you need to provide a path to your Gemfile:
+To have appCanary monitor the gems in your Ruby application for vulnerabilities you need to provide a path to your Gemfile.lock:
 
 ```puppet
 class { '::appcanary':
   api_key: yourapikeyhere
   paths:
-    - /path/to/your/Gemfile
+    - /path/to/your/Gemfile.lock
+    - /a/different/Gemfile.lock
 }
 ```
 
@@ -64,10 +65,10 @@ class { '::appcanary':
 The following parameters are available in the ::appcanary class:
 
 ####`api_key`
-Specifies your API key from https://appcanary.com/settings
+Specifies your API key. Get yours from https://appcanary.com/settings
 
 ####`paths`
-Specifies the paths to your Gemfiles
+Specifies the paths to your Gemfile.locks
 
 ##Limitations
 
