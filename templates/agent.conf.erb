@@ -1,7 +1,7 @@
 # /etc/appcanary/agent.conf: Managed by puppet
 #
 # Get your API key at https://www.appcanary.com/settings
-api_key = "<%= api_key %>"
+api_key = "<%= @api_key %>"
 
 <% if operatingsystem == "Ubuntu" -%>
 [[files]]
