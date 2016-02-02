@@ -1,4 +1,4 @@
-<a href="https://appcanary.com"><img src="https://github.com/appcanary/puppet-appcanary/raw/master/appcanary-hero.png" /></a>
+<a href="https://appcanary.com"><img width="500px"src="https://github.com/appcanary/puppet-appcanary/raw/master/appcanary-hero.png" /></a>
 
 # puppet-appcanary
 
