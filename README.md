@@ -1,11 +1,13 @@
+<a href="https://appcanary.com"><img src="https://github.com/appcanary/puppet-appcanary/raw/master/appcanary-hero.png" /></a>
+
 # puppet-appcanary
 
 ####Table of Contents
 
 1. [Description](#description)
-2. [Setup - The basics of getting started with appCanary](#setup)
+2. [Setup - The basics of getting started with Appcanary](#setup)
     * [Setup requirements](#setup-requirements)
-    * [Beginning with appCanary](#beginning-with-appCanary)
+    * [Beginning with Appcanary](#beginning-with-Appcanary)
 3. [Usage](#usage)
 4. [Reference](#reference)
 5. [Limitations](#limitations)
@@ -13,7 +15,7 @@
 
 ##Description
 
-appCanary is a security service that monitors your infrastructure for security vulnerabilities. This module will manage the agent on your hosts.
+Appcanary is a security service that monitors your infrastructure for security vulnerabilities. This module will manage the agent on your hosts.
 
 You'll need to provide the module with your API key and a list of paths to monitor.
 
@@ -21,11 +23,11 @@ You'll need to provide the module with your API key and a list of paths to monit
 
 ###Setup Requirements
 
-The appCanary agent package is hosted on packagecloud.io, so be sure to grab computology/packagecloud from the Forge. You can just add the following to your Puppetfile:
+The Appcanary agent package is hosted on packagecloud.io, so be sure to grab computology/packagecloud from the Forge. You can just add the following to your Puppetfile:
 
 `mod 'computology/packagecloud'`
 
-###Beginning with appCanary 
+###Beginning with Appcanary 
 
 You'll need your API key from https://appcanary.com/settings. With that in hand this will get you started:
 
@@ -37,7 +39,7 @@ class { '::appcanary':
 
 ##Usage
 
-To have appCanary monitor the gems in your Ruby application for vulnerabilities you need to provide a path to your Gemfile.lock:
+To have Appcanary monitor the gems in your Ruby application for vulnerabilities you need to provide a path to your Gemfile.lock:
 
 ```puppet
 class { '::appcanary':
@@ -56,10 +58,10 @@ class { '::appcanary':
 * appcanary: Main class, includes all other classes.
 
 ####Private Classes
-* appcanary::prereq: Installs the packagecloud.io repository where appCanary resides
-* appcanary::install: Installs appCanary
-* appcanary::config: Configures appCanary
-* appcanary::service: Ensures appCanary runs
+* appcanary::prereq: Installs the packagecloud.io repository where Appcanary resides
+* appcanary::install: Installs Appcanary
+* appcanary::config: Configures Appcanary
+* appcanary::service: Ensures Appcanary runs
 
 ###Parameters
 The following parameters are available in the ::appcanary class:
@@ -72,7 +74,7 @@ Specifies the paths to your Gemfile.locks
 
 ##Limitations
 
-Only tested on Ubuntu Trusty so far. Should work on any platform supported by the packagecloud.io module and by appCanary itself.
+Only tested on Ubuntu Trusty so far. Should work on any platform supported by the packagecloud.io module and by Appcanary itself.
 
 ##Development
 
