@@ -9,7 +9,7 @@ class appcanary (
   validate_array($paths)
   validate_absolute_path($config)
   validate_string($config_template)
-  validate_array($package_name)
+  validate_array($package_names)
   validate_string($package_ensure)
   validate_string($service_name)
   validate_bool($service_enable)

@@ -1,9 +1,8 @@
 #
 class appcanary::install inherits appcanary {
 
-  package { 'appcanary':
+  package { $package_names:
     ensure => $package_ensure,
-    name   => $package_name,
   }
 
 }
