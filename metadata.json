@@ -1,6 +1,6 @@
 {
   "name": "appcanary-appcanary",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "author": "Michael MacLeod",
   "license": "GPLv3",
   "summary": "A module for appcanary",
