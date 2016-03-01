@@ -6,8 +6,17 @@ api_key = "<%= @api_key %>"
 <% if @operatingsystem == "Ubuntu" -%>
 [[files]]
 path = "/var/lib/dpkg/status"
+
+<% end -%>
+<% if @operatingsystem =~ /centos/i -%>
+  <% if @operatingsystemmajrelease =~ /7/ -%>
+    [[files]]
+    process = "rpm -qa"
+
+  <% end -%>
 <% end -%>
 <% [@paths].flatten.each do |path| -%>
 [[files]]
 path = "<%= path %>"
+
 <% end -%>
