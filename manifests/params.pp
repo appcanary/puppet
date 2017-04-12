@@ -3,8 +3,8 @@ class appcanary::params {
 
   $api_key         = ''
   $paths           = []
-  $config          = '/etc/appcanary/agent.conf'
-  $config_template = 'appcanary/agent.conf.erb'
+  $config          = '/etc/appcanary/agent.yml'
+  $config_template = 'appcanary/agent.yml.erb'
   $package_names   = [ 'appcanary' ]
   $package_ensure  = 'present'
   $service_name    = 'appcanary'

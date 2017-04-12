@@ -1,22 +1,17 @@
 # /etc/appcanary/agent.conf: Managed by puppet
 #
 # Get your API key at https://www.appcanary.com/settings
-api_key = "<%= @api_key %>"
+api_key: "<%= @api_key %>"
 
+watchers:
 <% if @operatingsystem == "Ubuntu" -%>
-[[files]]
-path = "/var/lib/dpkg/status"
-
+- path: "/var/lib/dpkg/status"
 <% end -%>
 <% if @operatingsystem =~ /centos/i -%>
   <% if @operatingsystemmajrelease =~ /7/ -%>
-    [[files]]
-    process = "rpm -qa"
-
+- command: "rpm -qa"
   <% end -%>
 <% end -%>
 <% [@paths].flatten.each do |path| -%>
-[[files]]
-path = "<%= path %>"
-
+- path: "<%= path %>"
 <% end -%>
