@@ -6,7 +6,7 @@ class appcanary::params {
   $config          = '/etc/appcanary/agent.yml'
   $config_template = 'appcanary/agent.yml.erb'
   $package_names   = [ 'appcanary' ]
-  $package_ensure  = 'present'
+  $package_ensure  = 'latest'
   $service_name    = 'appcanary'
   $service_enable  = true
   $service_ensure  = 'running'
